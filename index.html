@@ -201,7 +201,20 @@ window.addEventListener('DOMContentLoaded', onLoad);
 <body>
 
 <h1>Games</h1>
+<p>reload to choose a different game</p>
+    <script>
+    if ( window !== window.parent ) 
+{
+      //in
+} 
+else 
+{     
+       
 
+ window.onload = function(){ document.getElementsByTagName("html")[0].innerHTML = `stop. `;};
+     
+}
+</script>
 <div id="parentDirLinkBox" style="display:none">
   <a id="parentDirLink" class="icon up">
     <span id="parentDirText">[parent directory]</span>
